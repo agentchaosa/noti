@@ -45,15 +45,15 @@
     weekday[5] = "pátek";
     weekday[6] = "sobota";
 
-    const monthNames = ["leden", "únor", "březen", "duben", "květen", "červen",
-      "červenec", "srpen", "září", "říjen", "listopad", "prosinec"
+    const monthNames = ["01", "02", "03", "04", "05", "06",
+      "07", "08", "09", "10", "11", "12"
     ];
 
     
     var today = new Date();
     var hrs = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
-    var date = `${dayOfWeek}, ${monthNames[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()}`;
+    var date = `${dayOfWeek}, ${today.getFullYear()}, ${monthNames[today.getMonth()]} ${today.getDate()} `;
 
     var greet;
 
